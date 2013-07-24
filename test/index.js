@@ -8,8 +8,12 @@ var c = {
 	}
 }
 
-var Sdk = new Sdk(c);
+var sdk = new Sdk(c);
 
-Sdk.GetTitles({}, function(err, data) {
+sdk.GetTitles({}, function(err, data) {
+	console.log(err, data)
+})
+
+sdk.GetNationalities({}, function(err, data) {
 	console.log(err, data)
 })
